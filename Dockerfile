@@ -1,9 +1,9 @@
 FROM eclipse-temurin:17-jdk
 
-COPY target/proj32.jar /user/app/
+WORKDIR /app
 
-WORKDIR /user/app/
+COPY target/proj32.jar proj32.jar
 
 EXPOSE 8080
 
-ENTRYPOINT [ "java", "-jar", "proj32.jar" ]
+ENTRYPOINT ["java", "-jar", "proj32.jar"]
