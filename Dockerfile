@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jdk
 
-COPY target/proj32.jar /app/user/
+COPY target/proj32.jar /user/app/
 
 WORKDIR /user/app/
 
